@@ -13,7 +13,7 @@ public class BankAccount {
       return balance;
     }
 
-    public int getID() {
+    public int getAccountID() {
       return accountID;
     }
 
@@ -38,5 +38,9 @@ public class BankAccount {
       }
       balance -= amount;
       return true;
+    }
+
+    public String toString() {
+      return accountID + "\t" + balance;
     }
 }
