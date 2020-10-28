@@ -21,9 +21,11 @@ public class BankAccount {
       password = newPassword;
     }
 
-    //temporary method to test if setPassword works
-    public String getPassword() {
-      return password;
+    public boolean deposit (double amount) {
+      if (amount < 0) {
+        return false;
+      }
+      balance += amount;
+      return true;
     }
-
 }

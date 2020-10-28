@@ -3,8 +3,10 @@ public class Customer {
     BankAccount B1 = new BankAccount(1, "12345");
     System.out.println(B1.getBalance());
     System.out.println(B1.getID());
-    System.out.println(B1.getPassword());
     B1.setPassword("banana");
-    System.out.println(B1.getPassword());
+    System.out.println(B1.deposit(200));
+    System.out.println(B1.getBalance());
+    System.out.println(B1.deposit(-100));
+    System.out.println(B1.getBalance());
   }
 }
