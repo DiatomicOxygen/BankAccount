@@ -48,6 +48,6 @@ public class BankAccount {
 
     //toString method (#5)
     public String toString() {
-      return accountID + "\t" + balance;
+      return "#" + accountID + "\t$" + balance;
     }
 }
