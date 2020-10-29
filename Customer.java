@@ -28,6 +28,8 @@ public class Customer {
     B1.deposit(200.1283);
     System.out.println(B1.toString());
 
+    System.out.println(B1.authenticate("banana"));
+    System.out.println(B1.authenticate("banona"));
 
   }
 }

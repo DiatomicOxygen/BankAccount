@@ -50,4 +50,11 @@ public class BankAccount {
     public String toString() {
       return "#" + accountID + "\t$" + balance;
     }
+
+    //I made the method temporarily public just to test it
+    public boolean authenticate(String password) {
+      return this.password.equals(password);
+    }
+
+
 }
