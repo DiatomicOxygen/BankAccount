@@ -28,8 +28,17 @@ public class Customer {
     B1.deposit(200.1283);
     System.out.println(B1.toString());
 
-    System.out.println(B1.authenticate("banana"));
-    System.out.println(B1.authenticate("banona"));
+    //Test for assignment 13
+    BankAccount B2 = new BankAccount(8123781, "12345");
+    System.out.println(B2);
+    System.out.println(B1.transferTo(B2, 200, "banana" ));
+    System.out.println(B1);
+    System.out.println(B2);
+    System.out.println(B1.transferTo(B2, 2000, "banana" ));
+    System.out.println(B1.transferTo(B2, 2000, "banona" ));
+    System.out.println(B1.transferTo(B2, -2000, "banana" ));
+    System.out.println(B1);
+    System.out.println(B2);
 
   }
 }
